@@ -14,10 +14,10 @@ description: 一个可以fork的博客
 #
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
+avatar: https://raw.githubusercontent.com/FromEndWorld/master/images/logo.png
 
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
+favicon: https://raw.githubusercontent.com/FromEndWorld/master/images/favicon.png
 
 
 # 菜单中的按钮
@@ -42,7 +42,7 @@ footer-links:
   email: fromendworld@outlook.com 
   facebook: #https://www.facebook.com/<>
   flickr: #https://www.flickr.com/<>
-  github: FromEndWorld/loffer #https://github.com/<>
+  github: FromEndWorld/ #https://github.com/<>
   instagram: #https://instagram.com/<>
   linkedin: #https://www.linkedin.com/in/<>
   pinterest: #https://www.pinterest.com/<>
@@ -67,7 +67,7 @@ url:
 # 添加你的博客的二级域名，一般来说是你的repository名
 # 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
 # 那么就写成 "/repository-name"
-baseurl: /LOFFER
+baseurl: /
 
 
 #
