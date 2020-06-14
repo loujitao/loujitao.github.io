@@ -1,14 +1,4 @@
----
-layout: post
-title: Markdown语法简介
-date: 2013-07-16
-Author: Shengbin
-categories: 
-tags: [sample, markdown]
-comments: true
----
-
-本中文版Markdown语法简介来自博客 <https://blog.shengbin.me/posts/markdown-syntax>
+中文版Markdown语法简介来自博客 <https://blog.shengbin.me/posts/markdown-syntax>
 
 Markdown语法的完整介绍在这里：<http://daringfireball.net/projects/markdown/syntax>。下面整理的这些为了方便写博客时参考。
 
@@ -202,11 +192,11 @@ I get 10 times more traffic from [Google](http://google.com/ "Google") than from
 如果直接以链接地址作为链接文本，可以用如下快捷写法：
 
 ```
-<http://www.shengbin.me> 效果：
+<https://github.com/loujitao> 效果：
 
 ```
 
-[http://www.shengbin.me](http://www.shengbin.me/)
+[https://github.com/loujitao](https://github.com/loujitao/)
 
 ### 强调
 
