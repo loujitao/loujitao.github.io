@@ -44,7 +44,7 @@ Uniform Memory Access
 
 利用NUMA技术,可以把几十个CPU (甚至上百个CPU)组合在一台服务器内。其CPU模块结构如图所示
 
-![](./images/202107281413.png)
+![](../blogImg/images/202107281413.png)
 
 NUMA服务器的基本特征是拥有多个CPU模块,每个CPU模块由多个CPU(如4个)组成并且具有独立的本地内存、I/O槽口等。
 
@@ -91,7 +91,7 @@ Data Redistribution )。
 但是MPP服务器需要一种复杂的机制来**调度和平衡各个节点的负载和并行处理过程**。
 
 目前,—些基于MPP技术的服务器往往通过系统级软件(如数据库)来屏蔽这种复杂性。
- 
+
 
 **特点**
 SMP组合的方式：每台SMP服务器（节点）通过节点互联网络连接。
@@ -117,7 +117,7 @@ MPP集群规模不能过大。
 
 
 
-![](./images/202107281426.png)
+![](../blogImg/images/202107281426.png)
 
 
 
@@ -232,7 +232,7 @@ MPP DB的核心原理是将一个大的査询通过分解为一个个子查询�
 PostgreSQL的基础上 、MPP架构，关系型分布式数据仓库。
 兼容Hadoop生态，-》HAWQ,存储层改用HDFS.
 
-![](./images/202107281559.png)
+![](../blogImg/images/202107281559.png)
 
 **Interconnect**
 1)        是GP数据库的网络层，在每个Segment中起到一个IPC作用；
@@ -245,7 +245,7 @@ PostgreSQL的基础上 、MPP架构，关系型分布式数据仓库。
 
 **1) 介绍说明：**  Impala是Cloudera在受到Google的Dremel启发下开发的实时交互SQL大数据查询工具（实时SQL查询引擎Impala），Impala没有再使用缓慢的Hive+MapReduce批处理，而是通过使用与商用并行关系数据库中类似的分布式查询引擎（由Query Planner、Query Coordinator和Query Exec Engine三部分组成），可以直接从HDFS或HBase中用SELECT、JOIN和统计函数查询数据，从而大大降低了延迟。
 
-![](./images/202107281607.png)
+![](../blogImg/images/202107281607.png)
 
 
 
@@ -259,7 +259,7 @@ PostgreSQL的基础上 、MPP架构，关系型分布式数据仓库。
 
 **CLI**: 提供给用户查询使用的命令行工具（Impala Shell使用python实现），同时Impala还提供了Hue，JDBC， ODBC使用接口。
 
-![](./images/202107281609.png)
+![](../blogImg/images/202107281609.png)
 
 
 
@@ -267,7 +267,7 @@ PostgreSQL的基础上 、MPP架构，关系型分布式数据仓库。
 
 Impala与Hive都是构建在Hadoop之上的数据查询工具各有不同的侧重适应面，但从客户端使用来看Impala与Hive有很多的共同之处，如数据表元数据、ODBC/JDBC驱动、SQL语法、灵活的文件格式、存储资源池等。Impala与Hive在Hadoop中的关系如图 2所示。Hive适合于长时间的批处理查询分析，而Impala适合于实时交互式SQL查询，Impala给数据分析人员提供了快速实验、验证想法的大数据分析工具。可以先使用hive进行数据转换处理，之后使用Impala在Hive处理后的结果数据集上进行快速的数据分析。
 
-![](./images/202107281643.png)
+![](../blogImg/images/202107281643.png)
 
 1、没有使用MapReduce进行并行计算，虽然MapReduce是非常好的并行计算框架，但它更多的面向批处理模式，而不是面向交互式的SQL执行。与MapReduce相比：Impala把整个查询分成一执行计划树，而不是一连串的MapReduce任务，在分发执行计划后，Impala使用拉式获取数据的方式获取结果，把结果数据组成按执行树流式传递汇集，减少的了把中间结果写入磁盘的步骤，再从磁盘读取数据的开销。Impala使用服务的方式避免每次执行查询都需要启动的开销，即相比Hive没了MapReduce启动时间。
 
@@ -294,7 +294,7 @@ Impala：实时数据分析，因为不支持UDF，能处理的问题域有一�
 
 presto的结构式master+slaver模式，具体组成如下：
 
-![](./images/202107281650.png)
+![](../blogImg/images/202107281650.png)
 
 主要组成部分是：
 
@@ -327,7 +327,7 @@ hive适合海量级别的数据的计算
 场景： 基于 T+1 数据的实时计算 
 在这种业务场景中，用户并**不要求基准数据的实时更新**，但是**要求每次查询数据都能够快速响应**。需要 Presto 和 Hive 配合使用来满足实际的业务需求。每天凌晨通过azkaban 调度 Hive 脚本，根据前一天的数据计算生成中间结果表，生成完毕之后使用 Presto 查询中间结果表，得出用户最终所需要的数据。满足该业务场景的解决方案如下图：
 
-![](./images/202107281706.png)
+![](../blogImg/images/202107281706.png)
 
 #### 2.4.4  ElasticSearch
 
@@ -337,7 +337,7 @@ Elasticsearch 是一个分布式可扩展的实时搜索和分析引擎,一个�
 - 实时分析的分布式搜索引擎。
 - 可以扩展到上百台服务器，处理PB级别的结构化或非结构化数据
 
-![](./images/202107281720.png)
+![](../blogImg/images/202107281720.png)
 
 
 
@@ -384,7 +384,7 @@ Vertica 充分利用列式存储的优点，在保持对前端应用透明的前
 
 ### 3.1 MPPDB、Hadoop与传统数据库技术对比与适用场景
 
-![](./images/202107281744.png)
+![](../blogImg/images/202107281744.png)
 
 
 
@@ -416,5 +416,5 @@ o 计算与数据分离，针对MPP计算特征，计算资源和IO资源优化�
 
 Apache HAWQ天然适应云环境，因为 HAWQ Segment节点是无状态和动态识别利用的，这使得Apache HAWQ支持运行期动态加减节点，并使用户能够方便地按需弹性扩容等；因此Apache HAWQ Segment节点也天然支持容错的功能，在有Segment节点失效情况下不影响集群的正常运行。在Master端主节点数据和服务通过主从互备的方式实现高可用。
 
-![](./images/202107281838.png)
+![](../blogImg/images/202107281838.png)
 
