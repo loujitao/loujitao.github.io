@@ -16,6 +16,8 @@ description: 一枚小码农
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
 avatar: /images/favicon.png
 
+# 微信二维码图片URL，建议尺寸不超过300px × 300px
+weixin: /images/wx.jpg
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
 favicon: /images/favicon.png
 
