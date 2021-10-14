@@ -1,9 +1,3 @@
-https://blog.csdn.net/Shockang/article/details/115609804
-
-
-
-# MPP架构和Hadoop组件的关系
-
 ## 1 系统架构分类
 
 从系统架构来看,目前的商用服务器大体可以分为三类：
@@ -418,3 +412,6 @@ Apache HAWQ天然适应云环境，因为 HAWQ Segment节点是无状态和动�
 
 ![](../blogImg/images/202107281838.png)
 
+
+
+https://blog.csdn.net/Shockang/article/details/115609804
