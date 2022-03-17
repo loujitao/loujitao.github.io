@@ -38,7 +38,7 @@ Uniform Memory Access
 
 利用NUMA技术,可以把几十个CPU (甚至上百个CPU)组合在一台服务器内。其CPU模块结构如图所示
 
-![](../blogImg/images/202107281413.png)
+![](../../blogImg/images/202107281413.png)
 
 NUMA服务器的基本特征是拥有多个CPU模块,每个CPU模块由多个CPU(如4个)组成并且具有独立的本地内存、I/O槽口等。
 
@@ -111,7 +111,7 @@ MPP集群规模不能过大。
 
 
 
-![](../blogImg/images/202107281426.png)
+![](../../blogImg/images/202107281426.png)
 
 
 
@@ -226,7 +226,7 @@ MPP DB的核心原理是将一个大的査询通过分解为一个个子查询�
 PostgreSQL的基础上 、MPP架构，关系型分布式数据仓库。
 兼容Hadoop生态，-》HAWQ,存储层改用HDFS.
 
-![](../blogImg/images/202107281559.png)
+![](../../blogImg/images/202107281559.png)
 
 **Interconnect**
 1)        是GP数据库的网络层，在每个Segment中起到一个IPC作用；
@@ -239,7 +239,7 @@ PostgreSQL的基础上 、MPP架构，关系型分布式数据仓库。
 
 **1) 介绍说明：**  Impala是Cloudera在受到Google的Dremel启发下开发的实时交互SQL大数据查询工具（实时SQL查询引擎Impala），Impala没有再使用缓慢的Hive+MapReduce批处理，而是通过使用与商用并行关系数据库中类似的分布式查询引擎（由Query Planner、Query Coordinator和Query Exec Engine三部分组成），可以直接从HDFS或HBase中用SELECT、JOIN和统计函数查询数据，从而大大降低了延迟。
 
-![](../blogImg/images/202107281607.png)
+![](../../blogImg/images/202107281607.png)
 
 
 
@@ -253,7 +253,7 @@ PostgreSQL的基础上 、MPP架构，关系型分布式数据仓库。
 
 **CLI**: 提供给用户查询使用的命令行工具（Impala Shell使用python实现），同时Impala还提供了Hue，JDBC， ODBC使用接口。
 
-![](../blogImg/images/202107281609.png)
+![](../../blogImg/images/202107281609.png)
 
 
 
@@ -261,7 +261,7 @@ PostgreSQL的基础上 、MPP架构，关系型分布式数据仓库。
 
 Impala与Hive都是构建在Hadoop之上的数据查询工具各有不同的侧重适应面，但从客户端使用来看Impala与Hive有很多的共同之处，如数据表元数据、ODBC/JDBC驱动、SQL语法、灵活的文件格式、存储资源池等。Impala与Hive在Hadoop中的关系如图 2所示。Hive适合于长时间的批处理查询分析，而Impala适合于实时交互式SQL查询，Impala给数据分析人员提供了快速实验、验证想法的大数据分析工具。可以先使用hive进行数据转换处理，之后使用Impala在Hive处理后的结果数据集上进行快速的数据分析。
 
-![](../blogImg/images/202107281643.png)
+![](../../blogImg/images/202107281643.png)
 
 1、没有使用MapReduce进行并行计算，虽然MapReduce是非常好的并行计算框架，但它更多的面向批处理模式，而不是面向交互式的SQL执行。与MapReduce相比：Impala把整个查询分成一执行计划树，而不是一连串的MapReduce任务，在分发执行计划后，Impala使用拉式获取数据的方式获取结果，把结果数据组成按执行树流式传递汇集，减少的了把中间结果写入磁盘的步骤，再从磁盘读取数据的开销。Impala使用服务的方式避免每次执行查询都需要启动的开销，即相比Hive没了MapReduce启动时间。
 
@@ -288,7 +288,7 @@ Impala：实时数据分析，因为不支持UDF，能处理的问题域有一�
 
 presto的结构式master+slaver模式，具体组成如下：
 
-![](../blogImg/images/202107281650.png)
+![](../../blogImg/images/202107281650.png)
 
 主要组成部分是：
 

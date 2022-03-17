@@ -6,7 +6,7 @@
 
 根据个人电脑系统选择对应版本，下载安装包备用。位置如下图：
 
-![](../blogImg/images/202111261500.png)
+![](../../blogImg/images/202111261500.png)
 
 操作： 点击1“Downloads”  ->  选择操作系统  -> 选择2稳定版中对应安装包（现在系统一般64位）
 
@@ -22,15 +22,15 @@
 
 **步骤一：**
 
-![](../blogImg/images/202111261516.png)
+![](../../blogImg/images/202111261516.png)
 
 **步骤二**
 
-![](../blogImg/images/202111261519.png)
+![](../../blogImg/images/202111261519.png)
 
 **步骤三**
 
-![](../blogImg/images/202111261520.png)
+![](../../blogImg/images/202111261520.png)
 
 安装在D盘的python39文件夹里了。之后点击安装`Install` 基本上没有问题。
 
@@ -44,15 +44,15 @@
 
 步骤1
 
-![](../blogImg/images/202111261532.png)
+![](../../blogImg/images/202111261532.png)
 
 步骤2
 
-![](../blogImg/images/202111261533.png)
+![](../../blogImg/images/202111261533.png)
 
 步骤3
 
-![](../blogImg/images/202111261538.png)
+![](../../blogImg/images/202111261538.png)
 
 在该目录下后追加：`D:\Python39\Scripts\;D:\Python39\`  
 
@@ -75,7 +75,7 @@
 推荐使用[清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)下载
 网址：https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
 
-![](../blogImg/images/202111261603.png)
+![](../../blogImg/images/202111261603.png)
 
 我下载的是Anaconda3-2021.05-Windows-x86_64.exe
 
@@ -85,23 +85,23 @@
 
 步骤：
 
-![](../blogImg/images/202111261647.png)
+![](../../blogImg/images/202111261647.png)
 
 点击NEXT。
 
-![](../blogImg/images/202111261648.png)
+![](../../blogImg/images/202111261648.png)
 
 选择 I agree
 
-![](../blogImg/images/202111261651.png)
+![](../../blogImg/images/202111261651.png)
 
 点击NEXT
 
-![](../blogImg/images/202111261653.png)
+![](../../blogImg/images/202111261653.png)
 
 选择安装目录，点击next
 
-![](../blogImg/images/202111261657.png)
+![](../../blogImg/images/202111261657.png)
 
 勾选第二项，为anaconda添加系统python环境，点击install
 
@@ -115,7 +115,7 @@
 
 在配置anaconda环境变量时，需把path中的python相关内容删除，替换为anaconda相关的目录。如下：
 
-![](../blogImg/images/202111261701.png)
+![](../../blogImg/images/202111261701.png)
 
 内容如下：
 
@@ -131,7 +131,7 @@ D:\Anaconda3\;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts\
 
 进入命令行显示版本号，即为安装成功。
 
-![](../blogImg/images/202111261709.png)
+![](../../blogImg/images/202111261709.png)
 
 
 
@@ -218,7 +218,7 @@ conda env create -f environment.yaml
 
 直接下载专业版（Professional）
 
-![](../blogImg/images/202111261729.png)
+![](../../blogImg/images/202111261729.png)
 
 #### 2）安装
 
@@ -246,15 +246,15 @@ conda env create -f environment.yaml
 
 1、放置插件
 
-![](../blogImg/images/202111261738.png)
+![](../../blogImg/images/202111261738.png)
 
 2、修改文件
 
-![](../blogImg/images/202111261739.png)
+![](../../blogImg/images/202111261739.png)
 
 修改内容如下
 
-![](../blogImg/images/202111261741.png)
+![](../../blogImg/images/202111261741.png)
 
 ```
 -javaagent:C:\Program Files\JetBrains\PyCharm 2018.1.2\JetbrainsCrack-2.8-release-enc.jar
@@ -293,7 +293,7 @@ ThisCrackLicenseId-{
 
 打开软件验证
 
-![](../blogImg/images/202111261746.png)
+![](../../blogImg/images/202111261746.png)
 
 
 
@@ -301,7 +301,7 @@ ThisCrackLicenseId-{
 
 点击”File“ -> "settings" -> "project interpreter"
 
-![](../blogImg/images/202111261749.png)
+![](../../blogImg/images/202111261749.png)
 
 在配置中”ADD“对应的python环境目录，或者anaconda创建的环境目录。
 
