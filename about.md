@@ -36,9 +36,17 @@ permalink: /about/
 
 技术栈：涉及大数据组件搭建运维，数据ETL，数仓sql查询分析，实时流式数据处理；调度任务。
 
-数仓建设、维度建模；数据治理。数据爬虫； 
+数仓建设、维度建模；数据治理。数据爬虫；.
 
-存储：hadoop、hive、hbase;  中间件：kafka;  计算：spark、flink  调度：azkaban、dolphinscheduler
+采集：flume、datax 
+
+存储：hadoop、hive、hbase;  
+
+中间件：kafka;  
+
+计算：spark、flink  
+
+调度：azkaban、dolphinscheduler
 
 分析：clickhouse、starrocks
 
