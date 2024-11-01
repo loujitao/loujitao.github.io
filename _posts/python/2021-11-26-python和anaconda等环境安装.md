@@ -1,3 +1,13 @@
+---
+layout: post
+title: Python环境安装
+date: 2021-11-26
+Author: 娄继涛
+categories: 语言
+tags: [python,工具]
+comments: true
+---
+
 ### 一、安装python
 
 #### 1) 下载
@@ -309,3 +319,4 @@ ThisCrackLicenseId-{
 
 ### 六、问题QA记录
 
++V 私聊

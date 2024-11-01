@@ -1,9 +1,21 @@
+---
+layout: post
+title: Python操作表格
+date: 2021-10-12
+Author: 娄继涛
+categories: 语言
+tags: [python,工具]
+comments: true
+---
+
 ### 一、简介
 
 Excel中有xls和xlsx两种格式，它们之间的区别是：
 
 1）文件格式不同。xls是一个特有的二进制格式，其核心结构是复合文档类型的结构，而xlsx的核心结构是XML类型的结构，采用的是基于 XML的压缩方式，使其占用的空间更小。xlsx 中最后一个 x 的意义就在于此。
+
 2）版本不同。xls是Excel2003及以前版本生成的文件格式，而xlsx是Excel2007及以后版本生成的文件格式。
+
 3）兼容性不同。xlsx格式是向下兼容的，可兼容xls格式。
 
 ### 二、库的选择

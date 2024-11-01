@@ -1,3 +1,13 @@
+---
+layout: post
+title: Markdown语法学习
+date: 2013-07-16
+Author: 娄继涛
+categories: 语言
+tags: [md,工具]
+comments: true
+---
+
 Markdown语法的完整介绍在这里：<http://daringfireball.net/projects/markdown/syntax>。下面整理的这些为了方便写博客时参考。
 
 ### 分段与分行
