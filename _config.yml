@@ -32,9 +32,11 @@ navigation:
     url: /archive
   - name: 标签
     url: /tags
+  - name: CSDN
+    url: https://blog.csdn.net/qq_38872310
 
 # 每页的文章数
-paginate: 8
+paginate: 10
 
 # 你的社交网络链接，它们会作为图标出现在你的网站页脚中，可选填写
 footer-links: 
